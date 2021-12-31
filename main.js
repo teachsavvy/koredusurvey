@@ -1,6 +1,6 @@
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = 'https://raw.githubusercontent.com/teachsavvy/koredusurvey/main/읽기.pdf';
+var url = 'https://raw.githubusercontent.com/teachsavvy/koredusurvey/main/test/reading.pdf';
 
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
@@ -27,10 +27,6 @@ function renderPage(num) {
     var viewport = page.getViewport({scale: scale});
     canvas.height = viewport.height;
     canvas.width = viewport.width;
-    // canvas.style.width = "100%";
-    // canvas.style.height = "100%";
-    // wrapper.style.width = Math.floor(viewport.width/scale) + 'pt';
-    // wrapper.style.height = Math.floor(viewport.height/scale) + 'pt';
 
     // Render PDF page into canvas context
     var renderContext = {
