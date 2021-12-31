@@ -1,6 +1,6 @@
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = 'https://raw.githubusercontent.com/teachsavvy/koredusurvey/main/test/reading.pdf';
+var url = 'https://raw.githubusercontent.com/teachsavvy/koredusurvey/main/reading.pdf';
 
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
