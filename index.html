@@ -11,13 +11,17 @@
 <body>
   <!-- <h1>중학생 리토러시 운용 평가</h1> -->
 
-  <div class='container-fluid vw-100 vh-100'>
+  <div class='container-fluid vw-100 vh-100 d-flex flex-column'>
+    <div>
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+      &nbsp; &nbsp;
+      <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+    </div>
+    <div style='overflow-y: scroll;' class="h-75 overflow-scroll">
+      <canvas id="the-canvas"></canvas>
+    </div>
     
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
-    &nbsp; &nbsp;
-    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-    <canvas id="the-canvas" style='overflow-y: scroll;' class="h-75 overflow-scroll"></canvas>
   </div>
   <script src="./main.js"></script>
 </body>
