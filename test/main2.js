@@ -12,7 +12,7 @@ var pdfDoc = null,
     pageNum = 1,
     pageRendering = false,
     pageNumPending = null,
-    scale = 0.8,
+    scale = 1.2,
     canvas = document.getElementById('the-canvas'),
     ctx = canvas.getContext('2d');
 
@@ -27,6 +27,8 @@ function renderPage(num) {
     var viewport = page.getViewport({scale: scale});
     canvas.height = viewport.height;
     canvas.width = viewport.width;
+    // canvas.height = document.querySelector("#canvasdiv").offsetWidth/210*297;
+    // canvas.width = document.querySelector("#canvasdiv").offsetWidth;
 
     // Render PDF page into canvas context
     var renderContext = {
